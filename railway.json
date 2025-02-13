@@ -1,0 +1,12 @@
+{
+    "build": {
+      "builder": "nixpacks",
+      "nixpacksPlan": {
+        "pkgs": ["python39", "pip"]
+      }
+    },
+    "deploy": {
+      "startCommand": "gunicorn myproject.wsgi --bind 0.0.0.0:8000"
+    }
+  }
+  
