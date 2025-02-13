@@ -39,7 +39,8 @@ AWS_REGION_NAME = os.getenv("AWS_REGION_NAME")
 #     "bmot53x9ba.execute-api.ap-south-1.amazonaws.com"
 # ]
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["*",
+                 "railway.app"]
 
 
 # Application definition
@@ -75,7 +76,8 @@ CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:8000",
     "https://staging.d2wmln10nqnhu3.amplifyapp.com",
     "https://staging.d2wmln10nqnhu3.amplifyapp.com",
-     "https://bmot53x9ba.execute-api.ap-south-1.amazonaws.com" # If needed
+    "https://bmot53x9ba.execute-api.ap-south-1.amazonaws.com",
+    "web-production-5d174.up.railway.app" # If needed
 ]
 ROOT_URLCONF = 'myproject.urls'
 
